@@ -3,11 +3,15 @@
 #pragma once
 
 using namespace System;
+using namespace std;
+#include <vector>
 
 namespace MatrixLib {
 
 	public ref class Class1
 	{
-		// TODO: Add your methods for this class here.
+	public:
+		vector <vector <double>>Multiply(vector<vector<double>> A, vector<vector<double>> B);
+
 	};
 }
