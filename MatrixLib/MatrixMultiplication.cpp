@@ -6,14 +6,14 @@ using namespace std;
 #include <vector>
 #include <iostream>
 
-vector <vector <double>>Class1::Multiply(vector<vector<double>> A, vector<vector<double>> B)
+vector <vector <double> >Class1::Multiply(vector<vector<double> > A, vector<vector<double> > B)
 {
-	int columnA = A[0].size;									//Saving variables to check dimensions.
-	int rowB = B.size;
+	int columnA = A[0].size();									//Saving variables to check dimensions.
+	int rowB = B.size();
 
-	int rowA = A.size;
-	int colB = B[0].size;                                    //Dimensions for the new matrix. rowA * colB.
-	vector<vector<double>> C(rowA, vector<double>(colB));
+	int rowA = A.size();
+	int colB = B[0].size();                                    //Dimensions for the new matrix. rowA * colB.
+	vector<vector<double> > C(rowA, vector<double>(colB));
 
 	if (columnA != rowB)
 	{
